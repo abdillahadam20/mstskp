@@ -1,0 +1,19 @@
+.section {
+  @apply bg-base-500 w-full;
+}
+
+.container {
+  @apply max-w-6xl mx-auto;
+}
+
+.nav {
+  @apply flex md:flex-row;
+}
+
+.nav__list {
+  @apply flex flex-row justify-center items-center;
+}
+
+.nav__item {
+  @apply mx-8 text-base font-normal font-dmsans leading-5 text-white;
+}
