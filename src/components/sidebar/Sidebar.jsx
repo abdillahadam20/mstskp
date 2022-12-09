@@ -11,15 +11,15 @@ const Sidebar = () => {
     <>
       {showSidebar ? (
         <button>
-          <AiOutlineCloseCircle onClick={() => setShowSidebar(!showSidebar)} className="relative left-52" />
+          <AiOutlineCloseCircle onClick={() => setShowSidebar(!showSidebar)} className="flex absolute text-4xl text-white items-center cursor-pointer right-10 top-6 z-50" />
         </button>
       ) : (
-        <HiMenu onClick={() => setShowSidebar(!showSidebar)} className="z-30 flex items-center cursor-pointer right-10 top-6" />
+        <HiMenu onClick={() => setShowSidebar(!showSidebar)} className="md:hidden flex absolute left-8 top-8 text-white" />
       )}
-      <div className={`top-0 right-0 w-[35vw] text-white fixed h-full z-40 pt-8 ease-in-out duration-300 ${
+      <div className={`top-0 right-0 w-[35vw] text-white absolute h-full z-40 ease-in-out duration-300 ${
           showSidebar ? "translate-x-[-17rem] " : "translate-x-[-600px]"
         }`}>
-        <div className="min-h-screen p-3 space-y-2 w-60 bg-gray-900 text-gray-100">
+        <div className="min-h-screen p-3 space-y-2 w-60 bg-gray-900 text-gray-100 md:hidden">
           <div className="divide-y divide-gray-700">
             <ul className="pt-2 pb-4 space-y-1 text-sm">
               <li className="bg-gray-800 text-gray-50">
